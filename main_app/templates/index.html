@@ -10,9 +10,10 @@
 </head>
 <body>
     <h1>Wacky Widgets</h1>
-    <hr>
+    
     {% if widgets|length == 0 %}
-        <p>No Widgets Exist</p>
+        <h3>No Widgets Exist</h3>
+        <hr>
     {% else %}
         <ul>
             {% for widget in widgets %}
@@ -20,6 +21,5 @@
             {% endfor %}
         </ul>
     {% endif %}
-    <hr>
 </body>
 </html>
